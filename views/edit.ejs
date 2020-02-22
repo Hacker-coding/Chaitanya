@@ -1,0 +1,77 @@
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/6/6a/Godot_icon.svg">
+  <title>Friends List</title>
+  <style>
+  body{
+    background-image: url(https://newevolutiondesigns.com/images/freebies/galaxy-wallpaper-1.jpg);
+    background-position: center;
+    background-size: cover;
+
+ }
+ .d{
+    color: #ffffff;
+ }
+ 
+ form{
+      margin-left: 10px;
+   }
+   nav{
+     color: rgba(0, 200, 250, 0.918);
+   }
+   center{
+    margin-right: 600px;
+   }
+</style>
+</head>
+<div class="d">
+<body>
+  <div class="pos-f-t">
+    <div class="collapse" id="navbarToggleExternalContent">
+      <div class="bg-dark p-4">
+  
+        <a href="/create" class="btn btn-small btn-primary">New</a>
+        <br>
+        <br>
+        <a href="/2" class="btn btn-small btn-primary">Home</a>
+      </div>
+    </div>
+    <nav class="navbar navbar-dark bg-dark">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <h1><center>The Form </center></h1>
+    </nav>
+  </div>
+  
+  <br>
+  <br>
+  <br>
+<form method="POST" action="/updating_data/<%=data._id%>?_method=PUT" >
+  <input type="text" placeholder="Name" value="<%=data.Name%>" name="Name">
+  <br>
+  <br>
+  <input type="text" placeholder="age"value="<%=data.age%>"  name="age">
+  <br>
+  <br>
+  <input type="text" placeholder="phone number" value="<%=data.phone_number %>" name="phone_number" >
+  <br>
+  <br>
+  <input type="text" placeholder="likes" value="<%=data.likes%>" name="likes">
+  <br>
+  <br>
+  <input type="text" placeholder="birthday"value="<%=data.birthday%>"  name="birthday">
+  <br>
+  <br>
+  <input type="text" placeholder="review" value="<%=data.review%>" name="review">
+  <br>
+  <br>
+</div>
+  <button >
+    submit
+  </button>
+</form>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
